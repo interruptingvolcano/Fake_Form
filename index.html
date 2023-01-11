@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet's Hard Form Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <fieldset class="heading">
+    <div>
+    <h1>Speaker Submission</h1>
+    <h3>Want to speak at our fake conference? <br> Fill out this form.</h3>
+  </div>
+  </fieldset>
+  
+  
+  <form action="https://..." method="post">
+
+    <fieldset class="main">
+      <section class="submission">
+        <div>
+        <label for="name">
+          Name 
+        </label>
+        <input type="text" id="name" name="name" />
+        </div>
+        <div>
+        <label for="email">
+          Email 
+        </label>
+        <input type="email" id="email" name="email">
+        </div>
+       <div class="talk-type">
+        <label for="talk_type">
+          Type of Talk 
+        </label>
+        <div class="radio">
+          <input type="radio" id="main" name="talk_type">
+          <label for="main">Main Stage</label>
+          <input type="radio" id="workshop" name="talk_type">
+          <label for="workshop">Workshop</label>
+        </div>
+        </div>
+
+        <div>
+        <label for="size">T-Shirt Size</label>
+        <select name="size" id="size">
+          <option value="x_small">Extra Small</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="x_large">Extra Large</option>
+        </select>
+        </div>
+        <div>
+        <label for="abstract">Abstract</label>
+        <textarea name="abstract" id="abstract" cols="30" rows="10">
+          
+        </textarea>
+        <label for="abstract2">Describe your talk in 500 words or less</label>
+        </div>
+        <div class="available">
+          <input type="checkbox" name="availability" id="availability" />
+          <label for="availability">
+            I'm actually available the date of the talk
+          </label>
+        </div>
+
+      </section>
+      
+      
+        <div class="button"><button>Submit</button></div>
+    
+    </fieldset>
+
+
+  </form>
+  
+</body>
+</html>

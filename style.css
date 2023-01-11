@@ -1,0 +1,130 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  width: 60%;
+  background: rgba(235,237,240,255);
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.heading {
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px 0;
+  background: rgba(247,246,248,255);
+}
+
+.main {
+  background: rgba(247,246,248,255);
+  border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 180px;
+  height: 25px;
+}
+
+label[for="main"],
+label[for="workshop"] {
+  font-size: 13px;
+}
+
+label {
+  padding: 0 10px;
+}
+
+select {
+  width: 180px;
+  height: 25px;
+}
+
+.radio > input + label {
+  padding: 0px;
+}
+
+.submission > div {
+  display: grid;
+  grid-template-columns: .8fr 2fr;
+  padding: 10px 10px;
+  gap: 5px;
+  
+}
+
+label[for="name"],
+label[for="email"],
+label[for="talk_type"],
+label[for="size"],
+label[for="abstract"] {
+  text-align: right;
+}
+
+label[for="availability"] {
+  font-size: 12px;
+  padding-left: 18px;
+  padding-top: 2px;
+}
+
+textarea + label {
+  grid-column-start: 2;
+  font-size: 12px;
+  color: gray;
+  padding: 0px;
+
+}
+
+input[type="checkbox"] {
+  appearance: none;
+}
+
+input[type="checkbox"] {
+  grid-column-start: 2;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+}
+
+input[type="checkbox"]:after {
+  visibility: hidden;
+  content: "✓";
+  color: green;
+  font-size: 18px;
+  position: relative;
+  bottom: 10px;
+}
+
+input[type="checkbox"]:checked:after {
+  visibility: visible;
+}
+
+label[for="availability"] {
+  grid-column-start: 2;
+  margin-top: -21px;
+  margin-left: 3px;
+}
+
+.button {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+button {
+  width: 120px;
+  height: 30px;
+  font-size: 14px;
+  color: white;
+  background: rgb(125, 125, 217);
+}
